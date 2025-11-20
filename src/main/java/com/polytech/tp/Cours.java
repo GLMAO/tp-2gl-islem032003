@@ -11,7 +11,7 @@ public class Cours implements ICours {
     private boolean necessiteProjecteur;
 
     
-    public Cours(String matiere, String enseignant, String salle, String date, 
+    public Cours(String matiere, String enseignant, String salle, String date,
                  String heureDebut, boolean estOptionnel, String niveau, boolean necessiteProjecteur) {
         this.matiere = matiere;
         this.enseignant = enseignant;
@@ -36,4 +36,10 @@ public class Cours implements ICours {
     
     public String getMatiere() { return matiere; }
     public String getEnseignant() { return enseignant; }
+    public String getSalle() { return salle; }
+    public String getDate() { return date; }
+    public String getHeureDebut() { return heureDebut; }
+    public boolean isOptionnel() { return estOptionnel; }
+    public String getNiveau() { return niveau; }
+    public boolean isNecessiteProjecteur() { return necessiteProjecteur; }
 }
